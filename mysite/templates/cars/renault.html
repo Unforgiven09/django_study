@@ -1,0 +1,15 @@
+{% extends "cars/base.html" %}
+{% block content %}
+<h1>{{title}}</h1>
+{% for x in cars_info %}
+{% if 'Renault' in x.name %}
+<div class="card mb-3">
+  <img src="{{ x.photo }}" class="card-img-top" alt="{{ x.name }}">
+  <div class="card-body">
+    <h5 class="card-title">{{ x.name }}</h5>
+    <p class="card-text">{{ x.disc }}</p>
+  </div>
+</div>
+{% endif %}
+{% endfor %}
+{% endblock %}

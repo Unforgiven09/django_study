@@ -1,0 +1,65 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<h1 class="page-header">
+    Page Heading
+    <small>Secondary Text</small>
+</h1>
+
+<!-- First Blog Post -->
+<h2>
+    <a href="{% url 'post' %}">Dragon</a>
+</h2>
+<p class="lead">
+    by <a href="index.php">Start Bootstrap</a>
+</p>
+<p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:00 PM</p>
+<hr>
+<img class="img-responsive" src="https://cdn.leonardo.ai/users/c1a7f87e-5b7f-4bbd-9827-fe7438ccca33/generations/d9b3d046-35a7-4ce5-b99c-f30ede7c1dd7/Leonardo_Phoenix_10_A_mystical_chibi_hybrid_of_a_Capricorn_and_3.jpg" alt="">
+<hr>
+<p>A mystical chibi hybrid of a Capricorn and a dragon, with a shiny pearly body and swirling watery tentacles, its large curious eyes shining, ultra-HD textures, cinematic atmosphere, whimsical fantasy setting} --v 9:16 --sharp details --HDR brightness --cute aesthetics</p>
+<a class="btn btn-primary" href="{% url 'post' %}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+<hr>
+
+<!-- Second Blog Post -->
+                <h2>
+                    <a href="{% url 'post' %}">Penguin</a>
+                </h2>
+                <p class="lead">
+                    by <a href="index.php">Start Bootstrap</a>
+                </p>
+                <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
+                <hr>
+                <img class="img-responsive" src="https://cdn.leonardo.ai/users/bfe5d063-b732-46f2-9d7c-7ad58a00a4c9/generations/250f17a1-ed91-4e00-9cf0-efb54a7760bb/Leonardo_Phoenix_10_generate_a_cute_illustration_For_the_Cotto_0.jpg?w=512" alt="">
+                <hr>
+                <p>generate a cute illustration For the Cotton Candy Penguin Poster, the environment should feel like a fluffy cotton candy wonderland that captures both the sweetness of cotton candy and the playfulness of a penguin. Imagine a floating Cotton Candy Sky Park, where everything is light, airy, and full of motion. At the center, a joyful penguin is playfully sliding down a swirled cotton candy slide, holding a cotton candy cone ice cream in one flipper, with a big, excited smile. The slide, made of soft, twisted strands of pastel pink and blue cotton candy, seamlessly blends into the landscape, giving a smooth, flowing feel to the environment. Below, the ground is a bouncy cotton candy field, with fluffy, cloud-like patches that feel weightless and soft. In the background, cotton candy clouds float gently in the sky, some forming tiny bridges or whimsical loops, reinforcing the idea of a floating playground. Soft sugar sparkles drift through the air, catching the light like tiny magical specks, adding a sense of fun and motion. The color palette is a dreamy mix of pastel pinks, purples, and blues, creating a cozy yet lively atmosphere. The entire scene feels like a light, airy, and joyful cotton candy world, where the penguin and its ice cream cone become the heart of the fun. use the cute illustration art for this</p>
+                <a class="btn btn-primary" href="post.html">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+                <hr>
+
+                <!-- Third Blog Post -->
+                <h2>
+                    <a href="{% url 'post' %}">Nice view</a>
+                </h2>
+                <p class="lead">
+                    by <a href="index.php">Start Bootstrap</a>
+                </p>
+                <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
+                <hr>
+                <img class="img-responsive" src="https://cdn.leonardo.ai/users/660f1f4c-f31b-46b8-a313-baf9837542ec/generations/de6a59bf-d5a6-4257-95b4-aeb8c774c9ea/Leonardo_Phoenix_10_Create_an_ultradetailed_and_breathtaking_i_0.jpg?w=512" alt="">
+                <hr>
+                <p>Create an ultra-detailed and breathtaking illustration of a majestic mountain landscape, inspired by the style of Studio Ghibli but with a more realistic and dramatic touch. The scene should feature towering, snow-capped mountains with rugged textures, their peaks piercing through a layer of soft, misty clouds. In the foreground, include a lush meadow filled with wildflowers, tall grass, and scattered rocks, each rendered with intricate textures and fine details. A crystal-clear river winds through the meadow, reflecting the vibrant colors of the sky and surrounding landscape. In the middle ground, add a dense forest with tall pine trees, their trunks and needles meticulously detailed. A small wooden cabin with smoke rising from the chimney should be nestled near the river, adding a sense of life and warmth to the scene. The background should highlight the grandeur of the mountains, with dramatic lighting from the setting sun casting golden hues across the peaks and creating long shadows. The sky should be a mix of warm oranges, pinks, and purples, with a few stars beginning to appear as twilight sets in. Add subtle details like eagles soaring near the mountain peaks, deer drinking from the river, and fireflies glowing in the meadow to bring the scene to life. The overall atmosphere should feel awe-inspiring, serene, and magica.</p>
+                <a class="btn btn-primary" href="post.html">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+                <hr>
+
+<!-- Pager -->
+<ul class="pager">
+    <li class="previous">
+        <a href="#">&larr; Older</a>
+    </li>
+    <li class="next">
+        <a href="#">Newer &rarr;</a>
+    </li>
+</ul>
+{% endblock %}
