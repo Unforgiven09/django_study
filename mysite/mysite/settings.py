@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'helloweb',
     'blog',
+    'blog2',
     'songs',
     'days',
     'cars',
