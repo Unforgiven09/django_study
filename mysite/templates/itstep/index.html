@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ITstep</title>
+</head>
+<body>
+<h1>Данные сгенерированны при помощи ChatGPT</h1>
+<h3>Показываем всех преподавателей</h3>
+{% for teacher in teachers %}
+<p>Имя - {{ teacher.first_name }} {{ teacher.last_name }}, почта - {{ teacher.email }}, телефон - {{ teacher.phone }}, дата рождения - {{ teacher.date_of_birth }}</p>
+{% endfor %}
+<hr>
+<h3>Показываем курс, его преподавателя и студентов</h3>
+{% for course in courses %}
+<p>Курс - {{ course.name }}: {{ course.description }}, Временной период: {{ course.start }} - {{ course.end }}, Ведет {{ course.teacher }} и выведем телефон: {{ course.teacher.phone }}</p>
+<h5>И перечисляем студентов из данного курса</h5>
+{% for student in students %}
+{% if course in student.courses.all %}
+<p>Студент - {{ student.first_name }} {{ student.last_name }}</p>
+{% endif %}
+{% endfor %}
+<hr>
+{% endfor %}
+<h3>Показываем всех студентов 2002 года и старше</h3>
+{% for student in students %}
+{% if student.date_of_birth.year <= 2002 %}
+<p>Студент - {{ student.first_name }} {{ student.last_name }} {{ student.date_of_birth }}</p>
+{% endif %}
+{% endfor %}
+<hr>
+<h3>Показываем всех студентов с соцсетями</h3>
+{% for student in students %}
+{% if student.url %}
+<p>Студент - {{ student.first_name }} {{ student.last_name }} {{ student.url }}</p>
+{% endif %}
+{% endfor %}
+<hr>
+<h3>Объединим два последних фильтра</h3>
+{% for student in students %}
+{% if student.date_of_birth.year <= 2002 and student.url %}
+<p>Студент - {{ student.first_name }} {{ student.last_name }} {{ student.date_of_birth }} {{ student.url }}</p>
+{% endif %}
+{% endfor %}
+</body>
+</html>

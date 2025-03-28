@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'songs',
     'days',
     'cars',
+    'itstep',
 ]
 
 MIDDLEWARE = [
